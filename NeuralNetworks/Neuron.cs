@@ -46,7 +46,7 @@ namespace NeuralNetworks
 
         public void SetWeights(params double[] weights)
         {
-            //TODO: удалить после возможности удаления сети
+            //TODO: удалить после возможности удаления сети.
             for (int i = 0; i < weights.Length; i++)
             {
                 weights[i] = weights[i];
