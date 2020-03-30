@@ -12,12 +12,15 @@ namespace NeuralNetworks
 
         public int OutputCount { get; }
 
+        public double LerningRate { get; }
+
         public List<int> HiddenLayers { get; }
 
-        public Topology(int inputCount, int outputCount, params int[] layers)
+        public Topology(int inputCount, int outputCount, double lerningRate, params int[] layers)
         {
             InputCount = inputCount;
             OutputCount = outputCount;
+            LerningRate = lerningRate; 
             HiddenLayers = new List<int>();
             HiddenLayers.AddRange(layers);
         }
